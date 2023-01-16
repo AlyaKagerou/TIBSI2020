@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    background-color:var(--body-color);
+    width: 6px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+:root{
+    --primary-color:#ff0000;
+    --secondary-color:#4350ad;
+    --body-color:#fff;
+    --text-color:#13131a;
+}
+.dark{
+    --primary-color:#ff0000;
+    --secondary-color:#56aeff;
+    --body-color:#13131A;
+    --text-color:#fff;
+}
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+  
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--body-color);
+}
+.navbar{
+    background-color: var(--body-color);
+}
+.navbar-nav li a{
+    color: var(--secondary-color);
+    margin: 0 10px;
+}
+.toggle{
+    margin: 0 10px;
+    align-items: center;
+    display: flex;
+    color: var(--secondary-color);
+}
+input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+.switch{
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 40px;
+    height: 20px;
+    background-color: var(--secondary-color);
+    display: block;
+    border-radius: 100px;
+    position: relative;
+    margin-left: 5px;
+}
+.switch::after{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #fff;
+    transition: 0.1s;
+}
+input:checked + .switch{
+    background-color: var(--secondary-color);
+}
+input:checked + .switch::after{
+    left:calc(100% - 5px);
+    transform: translateX(-100%);
+}
+.navbar-brand{
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+}
+.navbar-brand:hover{
+    color: var(--primary-color);
+}
+.navbar-brand span{
+    color: var(--secondary-color);
+}
+.intro{
+    font-size: 60px;
+    margin-top: 7rem;
+    color:var(--text-color) ;
+}
+.intro-name{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    color:var(--primary-color);
+}
+.intro-name span{
+    color: var(--secondary-color);
+}
+.welcome-text{
+    font-size: 25px;
+    color:#6c757d ;
+    font-weight: 500;
+}
+.col-1{
+    margin-top: 2rem;
+    margin-right: 5.5rem;
+}
+.card-mhs{
+    width: 170px;
+    height: 250px;
+    background-color: black;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .25s ease;
+}
+.card-mhs:hover::after{
+    height: 250px;
+}
+.card-mhs:hover .desc p{
+    margin-bottom: 0px;
+    opacity: 1;
+}
+.card-mhs:hover ul{
+    transform: translate(0);
+    opacity: 1;
+}
+.card-mhs::after{
+    width: 100%;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 90px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0,0,0,0)0%, rgba(0,0,0,1)100%);
+    z-index: 20;
+    transition: all .25s ease;
+}
+.card-mhs img{
+    height: 100%;
+    z-index: 10;
+    transition: all .25s ease;
+}
+.card-mhs .desc{
+    z-index: 30;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    padding: 9px;
+    padding-bottom: 55px;
+}
+.card-mhs .desc h5{
+    font-size: 17px;
+}
+.card-mhs .desc p{
+    font-size: .8rem;
+    opacity: 0;
+    margin-bottom: -170px;
+    transition: all .25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.ul{
+    position: absolute;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 40;
+    border-radius: 14px;
+    padding-left: 0px;
+    padding-top: 8px;
+    padding-bottom: 8;
+    top: 0;
+    opacity: 0;
+    transform: translate(100%);
+    transition: all .25s ease;
+}
+.ul li{
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: all .25s ease;
+    backface-visibility: hidden;
+    margin: 6px 0px 4px 0px;
+}
+.ul li:hover{
+    opacity: 1;
+}
+.footer{
+    background-color: var(--body-color);
+    color: var(--text-color);
+    padding: 1rem;
+    margin-top: 1.5rem;
+    font-size: 15px;
+    font-weight: 500;
+}
+@media screen and (max-width:428px){
+    .intro{
+        font-size: 30px;
+        margin-top: 2rem;
+    }
+    .intro-name{
+        font-size: 50px;
+    }
+    .card-mhs{
+        width: 110px;
+        height: 150px;
+    }
+    .card-mhs .desc{
+        padding: 0px 5px 20px 5px;
+    }
+    .card-mhs .desc p{
+        font-size: 12px;
+    }
+    .card-mhs .desc h5{
+        font-size: 12px;
+    }
+    .ul li{
+        width: 16px;
+        height: 16px;
+        margin: 2px 0px 3px 0px;
+    }
+}

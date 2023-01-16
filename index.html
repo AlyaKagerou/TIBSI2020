@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to TIBSI2020</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="Shortcut Icon" href="img/LogoTI.png" type="image/png">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand">Tibsi<span>2020</span></a>
+            <button class="navbar-toggler collapsed d-flex flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tugas Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kontak</a>
+                    </li>
+                </ul>
+                <div class="toggle">
+                    <i class='bx bx-moon bx-sm'></i>
+                    <input type="checkbox" id="switch">
+                    <label for="switch" class="switch" onclick="ubahMode()"></label>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Navbar-->
+
+    <!--Jumbotron-->
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="hero1">
+                        <div class="hero1-body">
+                            <h5 class="hero1-title">Selamat Datang di</h5>
+                            <h1 class="title">Tibsi<span>2020</span></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="hero2">
+                        <div class="hero2-body">
+                            <h5 class="hero2-title text"><span id="ti">Teknologi Informasi</span> tidaklah menjadikan manusia malas, justru membuat karya selalu berlimpah <span id="line" class="span2">tanpa batas</span>.</h5>
+                            <button class="btn-mhs"><a href="#">Daftar Mahasiswa</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="jumbotron">
+                        <img src="img/kampus-bsi-4.png" alt="kampus-ubsi-pemuda">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Jumbotron-->
+
+    <!--Tentang-->
+    <section id="about">
+        <div class="container"> 
+            <h2 class="title-center">tentang</h2>
+        </div>
+        <div class="container box">
+            <div class="imgbox ">
+                <img src="img/tibsi5.jpg" alt="">
+            </div>
+            <div class="content">
+                <p>Tibsi2020 adalah sebuah kelas jurusan teknologi informasi di kampus UBSI. Nama Tibsi2020 diambil dari jurusan, kampus, dan Tahun masuk, yaitu Teknologi Informasi (TI) di kampus Universitas Bina Sarana Informatika (UBSI) Tahun Masuk 2020. Tibsi2020 didirikan pada Tanggal 17 September 2021, dibuatnya web ini bertujuan untuk pengumpulan tugas mata kuliah web programing.</p>
+            </div>
+        </div>
+        <div class="container box">
+            <div class="imgbox">
+                <img src="img/tibsi4.jpg" alt="">
+            </div>
+            <div class="content">
+                <p>Dengan dibuatnya web ini bertujuan untuk pengumpulan tugas. kami berharap untuk dapat mempermudah kami untuk latihan bahasa pemprograman web, dan mengimplementasikan dalam website real. kami juga berharap memudahkan dosen untuk melakukan pengecekan tugas dari mahasiswa.</p>
+            </div>
+        </div>
+    </section>
+    <!--Tentang-->
+
+    <!--Tugas-->
+    <section id="tugas">
+        <div class="container">
+            <h2 class="title-center">Tugas Project</h2>
+        </div>
+        <ul class="nav nav-pills mt-4 justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Semester 3</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Semester 6</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                <div class="container justify-content-center">
+                    <div class="row row-cols-2 mb-5">
+                        <!--1st Group-->
+                        <div class="col-6 col-md-4 mt-4">
+                            <div class="card">
+                                <img src="img/kelompok_1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="avatar-group">
+                                        <div class="avatar">
+                                            <span class="avatar-name">Rizky H.</span>
+                                            <img src="img/dungky.jpg" alt="kidung">
+                                        </div>
+                                        <div class="avatar">
+                                            <span class="avatar-name">Arif</span>
+                                            <img src="img/arifwb.jpg" alt="arif">
+                                        </div>
+                                        <div class="avatar">
+                                            <span class="avatar-name">Suryo</span>
+                                            <img src="img/suryo.jpg" alt="suryo">
+                                        </div>
+                                        <div class="avatar">
+                                            <span class="avatar-name">Fatur</span>
+                                            <img src="img/mufaro.jpg" alt="mufaro">
+                                        </div>
+                                    </div>
+                                    <div class="card-info mt-3">
+                                        <h5 class="card-title">Ryuu&Co</h5>
+                                        <p class="card-text">Kelompok 1</p>
+                                        <a href="#" class="btn-project">Kunjungi Web</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--1st Group-->
+
+                        <!--2nd Group-->
+                        <div class="col-6 col-md-4 mt-4">
+                            <div class="card">
+                                <img src="img/kelompok_2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="avatar-group">
+                                        <div class="avatar">
+                                            <span class="avatar-name">Agin H.</span>
+                                            <img src="img/agin.jpg" alt="agin">
+                                        </div>
+                                        <div class="avatar">
+                                            <span class="avatar-name">Fian</span>
+                                            <img src="img/dickyfian.jpg" alt="fian">
+                                        </div>
+                                        <div class="avatar">
+                                            <span class="avatar-name">Ibnu</span>
+                                            <img src="img/avatar-none.png" alt="ibnu">
+                                        </div>
+                                        <div class="avatar">
+                                            <span class="avatar-name">Reza</span>
+                                            <img src="img/reza.jpg" alt="reza">
+                                        </div>
+                                    </div>
+                                    <div class="card-info mt-3">
+                                        <h5 class="card-title">Finding Cake</h5>
+                                        <p class="card-text">Kelompok 2</p>
+                                        <a href="#" class="btn-project">Kunjungi Web</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--2nd Group-->
+
+                        <!--3rd Group-->
+                        <div class="col-6 col-md-4 mt-4">
+                            <div class="card">
+                                <img src="img/kelompok_3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="avatar-group">
+                                        <div class="avatar">
+                                            <span class="avatar-name">Yunus</span>
+                                            <img src="img/avatar-none.png" alt="yunus">
+                                        </div>
+                                        <div class="avatar">
+                                            <span class="avatar-name">Romual S.</span>
+                                            <img src="img/avatar-none.png" alt="romual">
+                                        </div>
+                                        <div class="avatar">
+                                            <span class="avatar-name">Suswandi</span>
+                                            <img src="img/swandi.jpg" alt="suswandi">
+                                        </div>
+                                        <div class="avatar">
+                                            <span class="avatar-name">Alfian</span>
+                                            <img src="img/alfian.jpg" alt="alfian">
+                                        </div>
+                                    </div>
+                                    <div class="card-info mt-3">
+                                        <h5 class="card-title">ARYS Travel</h5>
+                                        <p class="card-text">Kelompok 3</p>
+                                        <a href="#" class="btn-project">Kunjungi Web</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--3rd Group-->
+
+                        <!--4th Group-->
+                        <div class="col-6 col-md-4 mt-4">
+                            <div class="card">
+                                <img src="img/kelompok_4.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="avatar-group">
+                                        <div class="avatar">
+                                            <span class="avatar-name">Sadeli</span>
+                                            <img src="img/sadeli.jpg" alt="sadeli">
+                                        </div>
+                                        <div class="avatar">
+                                            <span class="avatar-name">Hanafi</span>
+                                            <img src="img/hanafi.jpg" alt="hanafi">
+                                        </div>
+                                        <div class="avatar">
+                                            <span class="avatar-name">Annisa</span>
+                                            <img src="img/annisa2.jpg" alt="annisa">
+                                        </div>
+                                        <div class="avatar">
+                                            <span class="avatar-name">Alya</span>
+                                            <img src="img/kagerou.jpg" alt="Bo">
+                                        </div>
+                                    </div>
+                                    <div class="card-info mt-3">
+                                        <h5 class="card-title">Library.io</h5>
+                                        <p class="card-text">Kelompok 4</p>
+                                        <a href="#" class="btn-project">Kunjungi Web</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--4th Group-->
+
+                        <!--5th Group-->
+                        <div class="col-6 col-md-4 mt-4">
+                            <div class="card">
+                                <img src="img/kelompok_5.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="avatar-group">
+                                        <div class="avatar">
+                                            <span class="avatar-name">Sadewo</span>
+                                            <img src="img/sadewo.jpg" alt="sadewo">
+                                        </div>
+                                        <div class="avatar">
+                                            <span class="avatar-name">Adit</span>
+                                            <img src="img/adit.jpg" alt="adit">
+                                        </div>
+                                        <div class="avatar">
+                                            <span class="avatar-name">Rori</span>
+                                            <img src="img/rori.jpg" alt="rori">
+                                        </div>
+                                        <div class="avatar">
+                                            <span class="avatar-name">Alamul</span>
+                                            <img src="img/alamul.jpg" alt="alamul">
+                                        </div>
+                                        <div class="avatar">
+                                            <span class="avatar-name">Riani</span>
+                                            <img src="img/riani2.jpg" alt="riani">
+                                        </div>
+                                    </div>
+                                    <div class="card-info mt-3">
+                                        <h5 class="card-title">Party E-Invitation</h5>
+                                        <p class="card-text">Kelompok 5</p>
+                                        <a href="#" class="btn-project">Kunjungi Web</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--5th Group-->
+
+                        <!--6th Group-->
+                        <div class="col-6 col-md-4 mt-4">
+                            <div class="card">
+                                <img src="img/kelompok_6.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="avatar-group">
+                                        <div class="avatar">
+                                            <span class="avatar-name">Alif</span>
+                                            <img src="img/alif.jpg" alt="alif">
+                                        </div>
+                                        <div class="avatar">
+                                            <span class="avatar-name">Fajar</span>
+                                            <img src="img/fajar.jpg" alt="fajar">
+                                        </div>
+                                        <div class="avatar">
+                                            <span class="avatar-name">Abel</span>
+                                            <img src="img/abel.jpg" alt="abel">
+                                        </div>
+                                    </div>
+                                    <div class="card-info mt-3">
+                                        <h5 class="card-title">Cat Lovers</h5>
+                                        <p class="card-text">Kelompok 6</p>
+                                        <a href="#" class="btn-project">Kunjungi Web</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--6th Group-->
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade text-center mt-4" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <h1 class="">SOON</h1>
+            </div>
+        </div>
+    </section>
+    <!--Tugas-->
+
+    <!--Kontak-->
+    <section id="kontak">
+        <div class="container">
+            <h1 class="title-center">Kontak</h1>
+        </div>
+        <div class="row justify-content-center mb-3 form">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nama Kamu</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email Kamu</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Pesan Kamu</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--Kontak-->
+
+    <!--footer-->
+    <footer class="footer p-1">
+        <p class="mt-1">Copyright 2022 All Reserved | TIBSI2020</p>
+    </footer>
+    <!--footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script type="module">
+        import { annotate, annotationGroup} from 'https://unpkg.com/rough-notation?module';
+
+        const n1 = document.querySelector('#ti');
+        const n2 = document.querySelector('#line');
+
+        const a1 = annotate(n1, {type:'highlight', color:'#a2d2ff'});
+        const a2 = annotate(n2, {type:'underline', color:'red' , strokeWidth:3});
+
+        const ag = annotationGroup([a1, a2]);
+        ag.show();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
