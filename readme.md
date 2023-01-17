@@ -7,7 +7,7 @@
  Dengan dibuatnya web ini bertujuan untuk pengumpulan tugas. kami berharap untuk dapat mempermudah kami untuk latihan bahasa pemprograman web, dan mengimplementasikan dalam website real. kami juga berharap memudahkan dosen untuk melakukan pengecekan tugas dari mahasiswa.
  
 # Laman Beranda
-![Welcome-to-TIBSI2020---Google-Chrome-2023-01-16-21-06-52.gif](https://s3.gifyu.com/images/Welcome-to-TIBSI2020---Google-Chrome-2023-01-16-21-06-52.gif)(https://gifyu.com/image/SvemA)
+![Welcome to TIBSI2020 - Google Chrome 2023-01-16 21-06-52](https://user-images.githubusercontent.com/95572197/212919733-ef298d95-e8ed-43e5-aa80-70c369a0ac97.gif)
 
 # Laman Mahasiswa
 ![Mahasiswa---TIBSI2020---Google-Chrome-2023-01-16-21-08-17.gif](https://s9.gifyu.com/images/Mahasiswa---TIBSI2020---Google-Chrome-2023-01-16-21-08-17.gif)(https://gifyu.com/image/SvegA)
