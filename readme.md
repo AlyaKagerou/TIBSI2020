@@ -4,7 +4,7 @@
 
  TIBSI2020 adalah sebuah kelas jurusan teknologi informasi di kampus UBSI kawasan Rawamangun. Nama Tibsi2020 diambil dari jurusan, kampus, dan Tahun masuk, yaitu Teknologi Informasi (TI) di kampus Universitas Bina Sarana Informatika (UBSI) Tahun Masuk 2020. Tibsi2020 didirikan pada Tanggal 17 September 2021, dibuatnya web ini bertujuan untuk pengumpulan tugas mata kuliah web programing 1 dan 2.
 
- Dengan dibuatnya web ini bertujuan untuk pengumpulan tugas. kami berharap untuk dapat mempermudah kami untuk latihan bahasa pemprograman web, dan mengimplementasikan dalam website real. kami juga berharap memudahkan dosen untuk melakukan pengecekan tugas dari mahasiswa.
+ Dengan dibuatnya web ini bertujuan untuk pengumpulan tugas. mahasiswa berharap untuk dapat mempermudah mahasiswa lainnya untuk latihan bahasa pemprograman web, dan mengimplementasikan dalam website real. kami juga berharap memudahkan dosen untuk melakukan pengecekan tugas dari mahasiswa.
 
 ## Features
 
